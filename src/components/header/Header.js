@@ -8,7 +8,7 @@ const Header = () => {
     let elements = null
 
     if (window.location.href !== 'http://localhost:3000/') {
-        elements = (<div className="flex-container containerFirSign">
+        elements = (<div className="flex-container navContainer">
             <img src={cart} alt="cart" className="header__cart" width="30" height="30" />
             <img src={myPhoto} alt="" className="header__avatar" width="60" height="60" />
             <p className="username">Andrii Kobylyanskyi</p>

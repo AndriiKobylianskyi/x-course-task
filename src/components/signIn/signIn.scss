@@ -1,0 +1,38 @@
+.main {
+    height: 796px;
+    background-color: #222121;
+
+    .signContainer {
+        padding: 160px 0 0 250px
+    }
+
+    &__avatar {
+        padding: 0 168px;
+    }
+
+
+
+    &__input {
+        padding: 20px;
+        width: 500px;
+        border: 1px solid #646464;
+        color: #646464;
+        background-color: #222121;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .pbt-4 {
+        padding: 40px 0;
+    }
+
+
+}
+
+.username {
+    padding: 28px 195px;
+    color: #F0F0F0;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}

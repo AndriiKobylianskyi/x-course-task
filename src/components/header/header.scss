@@ -12,18 +12,21 @@
         display: block;
         align-items: center;
         color: #F0F0F0;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 700;
         text-transform: uppercase;
         text-decoration: none;
     }
 
-    .navContainer {
-        width: 580px;
+    &__cart {
+        position: absolute;
+        left: 1020px;
     }
 
     &__avatar {
-        border-radius: 100%
+        position: absolute;
+        left: 1070px;
+        border-radius: 100%;
     }
 
     &__button {
@@ -38,13 +41,14 @@
         text-transform: uppercase;
     }
 
+    .username {
+        position: absolute;
+        left: 980px;
+        margin-top: 13px;
+        color: #F0F0F0;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
 
-}
-
-.username {
-    color: #F0F0F0;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
 }

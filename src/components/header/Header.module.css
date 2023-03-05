@@ -1,0 +1,35 @@
+.logo {
+    line-height: 4em;
+    display: block;
+    align-items: center;
+    color: #F0F0F0;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.avatar {
+    border-radius: 100%;
+}
+
+.button {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    color: #F0F0F0;
+    background-color: #292929;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.username {
+    margin-top: 13px;
+    color: #F0F0F0;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

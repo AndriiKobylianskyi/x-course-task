@@ -1,74 +1,74 @@
-import book from '../../books/websocket.jpg'
-import vector from '../../images/Vector.png'
-import action from '../../images/Action.png'
+import { useState } from 'react'
 
-import './book-list.scss';
-import '../../globalStyle.scss'
+import vector from '../../assets/images/Vector.png'
+import action from '../../assets/images/Action.png'
 
+import styles from './Book-list.module.css'
+
+
+import data from '../../services/books.json'
+
+import BooksListItem from '../book-list-item/Book-list-item'
 
 
 const BookList = () => {
+    const [classNames, setClassNames] = useState(styles.dropDownContainer)
+
+    const toggleClass = () => {
+        if (classNames == styles.dropDownContainer) {
+            setClassNames(styles.dropDownContainer + ' ' + styles.show)
+        } else {
+            setClassNames(styles.dropDownContainer)
+        }
+
+    }
+
+    const elements = data.books.map(item => {
+        const { id, ...itemProps } = item
+
+
+
+
+        return (
+            <BooksListItem
+                key={id}
+                {...itemProps}
+            />
+        )
+
+    })
+
+
     return (
 
-        <main className="main">
-            <div className="content-container">
-                <img src={action} alt="search" className="main__searchImg" />
-                <input type="search" className="main__input main__input-search" placeholder="Search" />
 
-                <img src={vector} alt="dropdown" className="main__dropDownImg" />
-                <input type="number" className="main__input main__input-number" placeholder="Price" />
+        <div className="content">
+            <img src={action} alt="search" className={styles.searchImg} />
+            <input type="search" className={styles.inputSearch} placeholder="Search" />
 
-                <div className="main__dropDownContainer">
-                    <ul>
-                        <li>Всі</li>
-                        <li>Дорожче 0 але дешевше 15$ </li>
-                        <li>Дорожче 15$ але дешевше 30$ </li>
-                        <li>Дорожче 30$</li>
-                    </ul>
-                </div>
+            <img src={vector}
+                alt="dropdown"
+                className={styles.dropDownImg}
+                onClick={toggleClass} />
+            <input type="number" className={styles.inputNumber} placeholder="Price" />
 
-
-                <div className="flex-container containerForBooks">
-
-                    <div className="book"><img src={book} alt="картинка" class="book__image" />
-                        <p class="book__name mt-1">andrew
-                            <span>123543</span>
-                        </p>
-                        <p class="book__autor">PIPKA</p>
-                        <button class="book__button">View</button>
-                    </div>
-
-                    <div className="book"><img src={book} alt="картинка" class="book__image" />
-                        <p class="book__name mt-1">andrew
-                            <span>123543</span>
-                        </p>
-                        <p class="book__autor">PIPKA</p>
-                        <button class="book__button">View</button>
-                    </div>
-
-                    <div className="book"><img src={book} alt="картинка" class="book__image" />
-                        <p class="book__name mt-1">andrew
-                            <span>123543</span>
-                        </p>
-                        <p class="book__autor">PIPKA</p>
-                        <button class="book__button">View</button>
-                    </div>
-
-                    <div className="book"><img src={book} alt="картинка" class="book__image" />
-                        <p class="book__name mt-1">andrew
-                            <span>PIPKA</span>
-                        </p>
-                        <p class="book__autor">PIPKA</p>
-                        <button class="book__button">View</button>
-                    </div>
-
-
-
-                </div>
-
-
+            <div className={classNames}>
+                <ul>
+                    <li>Всі</li>
+                    <li>Дорожче 0 але дешевше 15$ </li>
+                    <li>Дорожче 15$ але дешевше 30$ </li>
+                    <li>Дорожче 30$</li>
+                </ul>
             </div>
-        </main>
+
+
+            <div className={'flex-container ' + styles.containerForBooks}>
+                {elements}
+            </div>
+
+
+        </div >
+
 
     )
 }

@@ -3,27 +3,34 @@ import Footer from '../footer/Footer';
 import SignIn from '../signIn/SignIn';
 import SpecificBook from '../specific-book/Specific-book';
 import BookList from '../book-list/Book-list';
+import Cart from '../cart/Cart';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
 
-import './app.css';
+
 
 
 function App() {
     return (
         <>
-
-            <Header />
-
-
-
-
-            {/* <SignIn /> */}
-            <SpecificBook />
-            {/* <BookList /> */}
+            <header className="header">
+                <Header />
+            </header>
 
 
 
+            <main className="main">
+                {/* <SignIn /> */}
+                <SpecificBook />
+                {/* <BookList /> */}
+                {/* <Cart /> */}
+                {/* <ErrorMessage /> */}
+            </main>
 
-            <Footer />
+
+
+            <footer className="footer">
+                <Footer />
+            </footer>
         </>
     );
 }

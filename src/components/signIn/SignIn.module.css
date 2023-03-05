@@ -1,0 +1,30 @@
+.pr16 {
+    padding-right: 160px;
+}
+
+.img {
+    padding-top: 50px;
+}
+
+.avatar {
+    padding: 0 168px;
+}
+
+
+.username {
+    padding: 28px 195px;
+    color: #F0F0F0;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.input {
+    padding: 20px;
+    width: 500px;
+    border: 1px solid #646464;
+    color: #646464;
+    background-color: #222121;
+    border-radius: 10px;
+    font-size: 15px;
+}

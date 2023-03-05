@@ -1,0 +1,51 @@
+.book {
+    margin-top: 30px;
+    width: 440px;
+    max-height: 650px;
+    position: relative;
+    background-color: #292929;
+    border-radius: 7px;
+}
+
+.book__img {
+    width: 440px;
+    height: 500px;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+
+.book__name {
+    margin-top: 5px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 700;
+
+}
+
+.book__price {
+    position: absolute;
+    right: 10px;
+}
+
+.book__author {
+    padding-top: 18px;
+    position: relative;
+    padding-left: 10px;
+    line-height: 0%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.book__button {
+    display: block;
+    width: 370px;
+    margin: 25px auto 15px;
+    padding: 10px;
+    background-color: #292929;
+    color: #F0F0F0;
+    border: 1px solid #F0F0F0;
+    border-radius: 7px;
+    cursor: pointer;
+}

@@ -1,0 +1,88 @@
+.searchImg {
+    position: absolute;
+    left: 13px;
+    top: 20px;
+}
+
+.inputSearch {
+    height: 60px;
+    width: 400px;
+    padding: 20px 20px 20px 40px;
+    color: #F0F0F0;
+    border: 1px solid #646464;
+    background-color: #222121;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.inputNumber {
+    height: 60px;
+    width: 260px;
+    right: 100px;
+    margin-left: 38px;
+    padding: 20px;
+    color: #F0F0F0;
+    border: 1px solid #646464;
+    background-color: #222121;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.inputNumber::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.dropDownImg {
+    position: absolute;
+    left: 665px;
+    top: 27px;
+}
+
+.dropDownContainer {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 442px;
+    width: 260px;
+    height: 100px;
+    margin-top: 3px;
+    border: 1px solid #646464;
+    border-radius: 7px;
+    background-color: #F0F0F0;
+    color: #222121;
+}
+
+li {
+    position: absolute;
+    z-index: 1;
+    font-size: 14px;
+    list-style-type: none;
+    left: 20px;
+    cursor: pointer;
+}
+
+li:nth-child(1) {
+    top: 7px
+}
+
+li:nth-child(2) {
+    top: 27px
+}
+
+li:nth-child(3) {
+    top: 47px
+}
+
+li:nth-child(4) {
+    top: 67px
+}
+
+.containerForBooks {
+    padding-bottom: 30px;
+}
+
+.show {
+    display: block;
+}

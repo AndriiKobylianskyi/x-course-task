@@ -1,36 +1,34 @@
-import book from '../../books/websocket.jpg'
+import book from '../../assets/books/websocket.jpg'
 
-import './specific-book.scss';
-import '../../globalStyle.scss'
+import styles from './Specific-book.module.css'
 
 const SpecificBook = () => {
     return (
-        <main className="main">
-            <div className="content-container">
-                <div className="flex-container pbt-7 alignFS">
-                    <div>
-                        <img src={book} alt="book" className="book__image" width="350"
-                            height="350" />
-                        <div className="book__description mt-2">Book description</div>
+
+        <div className="content">
+            <div className={styles.pbt5 + ` flex-container`}>
+                <div>
+                    <img src={book} alt="book" className={styles.book__image} />
+                    <div className={styles.mt2}>Book description</div>
+                </div>
+                <div className={styles.book__info}>
+                    <p className={styles.book__name + " " + styles.mt4}>Book name</p>
+                    <p className={styles.avatar + " " + styles.mt4}>Book autor</p>
+                    <p className={styles.mt4}>Book level</p>
+                    <p className={styles.mt4}>Book tags</p>
+                </div>
+                <div className={styles.blockForPrice}>
+                    <div className={styles.book__price}>Price, $ <span className={styles.book__priceSpan}>17</span></div>
+                    <div className={styles.conteinerForPrice}>
+                        <label for="counterForPrice" className={styles.label}>Count</label>
+                        <input type="number" className={styles.countInput} id="counterForPrice" placeholder='0' />
                     </div>
-                    <div className="book__info">
-                        <p className="book__name">Book name</p>
-                        <p className="book__autor mt-4">Book autor</p>
-                        <p className="book__level mt-4">Book level</p>
-                        <p className="book__tags mt-4">Book tags</p>
-                    </div>
-                    <div className="blockForPrice">
-                        <div className="book__price">Price, $ <span>17</span></div>
-                        <div className="counterForPrice">
-                            <label for="counterForPrice">Count</label>
-                            <input type="number" className="countInput" id="counterForPrice" value=" " />
-                        </div>
-                        <div className="totalPrice">Total price <span>51</span></div>
-                        <button className="addButton">Add to cart</button>
-                    </div>
+                    <div className={styles.totalPrice}>Total price <span className={styles.totalPriceSpan}>51</span></div>
+                    <button className={styles.addButton}>Add to cart</button>
                 </div>
             </div>
-        </main>
+        </div >
+
     )
 }
 

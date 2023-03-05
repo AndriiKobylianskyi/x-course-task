@@ -1,10 +1,9 @@
-import './footer.scss';
+
 
 const Footer = () => {
-    return (<footer className="footer">
+    return (
+        <>Виконано в <a a href="https://prometheus.org.ua" > Prometheus</a > © 2022</>
 
-        Виконано в <a href="https://prometheus.org.ua">Prometheus</a> © 2022
-
-    </footer>)
+    )
 }
 export default Footer

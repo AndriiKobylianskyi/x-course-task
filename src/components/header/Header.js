@@ -24,6 +24,20 @@ const Header = () => {
         elements = null
     }
 
+    // if ((urlDEV !== '/' && urlDEV !== '/x-course-task')) {
+    //     elements = (
+    //         <div className="flex-container w700">
+    //             <Link to='/cart'><img src={cart} alt="cart" width="30" height="30" /></Link>
+    //             <img src={myPhoto} alt="" className={styles.avatar} width="60" height="60" />
+    //             <p className={styles.username}>Andrii Kobylyanskyi</p>
+    //             <Link to='/'><button className={styles.button}
+    //                 onClick={() => localStorage.clear()}>sign out</button></Link>           it's FOR DEV
+    //         </div>
+    //     )
+    // } else {
+    //     elements = null
+    // }
+
 
     return (
 

@@ -27,7 +27,6 @@ const Header = () => {
     return (
 
         <div className="content flex-container">
-
             <div className=""><Link to="/" className={styles.logo}>bookbuy</Link></div>
             {elements}
         </div>

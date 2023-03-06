@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
     return (
+
         <Router>
             <header className="header">
                 <Header />
@@ -35,6 +36,7 @@ function App() {
                 <Footer />
             </footer>
         </Router>
+
     );
 }
 

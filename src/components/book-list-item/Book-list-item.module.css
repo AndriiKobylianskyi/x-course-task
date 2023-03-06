@@ -25,7 +25,7 @@
 }
 
 .book__info {
-    left: 500px;
+    left: 400px;
     top: 60px;
     position: absolute;
 }
@@ -48,7 +48,7 @@
     position: absolute;
     top: 85px;
     right: 0px;
-    width: 520px;
+    width: 450px;
     height: 390px;
     border: 1px solid #F0F0F0;
     border-radius: 2%;

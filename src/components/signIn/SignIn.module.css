@@ -24,7 +24,28 @@
     width: 500px;
     border: 1px solid #646464;
     color: #646464;
+    color: #F0F0F0;
     background-color: #222121;
     border-radius: 10px;
     font-size: 15px;
+}
+
+.button {
+    display: block;
+    width: 200px;
+    padding: 20px;
+    margin: 10px 0 0 150px;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    color: #F0F0F0;
+    background-color: #292929;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:disabled {
+    color: #808080;
+    cursor: auto;
 }

@@ -1,51 +1,125 @@
-.book {
-    margin-top: 30px;
-    width: 440px;
-    max-height: 650px;
-    position: relative;
-    background-color: #292929;
-    border-radius: 7px;
+.pbt5 {
+    padding: 50px 0;
 }
 
-.book__img {
-    width: 440px;
+
+
+.mt4 {
+    margin-top: 40px;
+}
+
+
+
+.book__image {
+    width: 370px;
     height: 500px;
+    padding-top: 30px;
     background-size: cover;
     object-fit: cover;
     background-position: center;
 }
 
+.book__description {
+    width: 370px;
+    margin-top: 20px;
+}
+
+.book__info {
+    left: 500px;
+    top: 60px;
+    position: absolute;
+}
+
+
 .book__name {
-    margin-top: 5px;
-    text-transform: uppercase;
-    padding-left: 10px;
-    font-size: 17px;
     font-weight: 700;
+    font-size: 20px;
+}
+
+.book__author {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+
+.blockForPrice {
+    position: absolute;
+    top: 85px;
+    right: 0px;
+    width: 520px;
+    height: 390px;
+    border: 1px solid #F0F0F0;
+    border-radius: 2%;
 
 }
 
 .book__price {
-    position: absolute;
-    right: 10px;
-}
-
-.book__author {
-    padding-top: 18px;
-    position: relative;
+    padding-top: 20px;
     padding-left: 10px;
-    line-height: 0%;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 700;
+
 }
 
-.book__button {
-    display: block;
-    width: 370px;
-    margin: 25px auto 15px;
-    padding: 10px;
-    background-color: #292929;
-    color: #F0F0F0;
+.book__priceSpan {
+    position: absolute;
+    right: 20px;
+    top: 28px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.conteinerForPrice {
+    padding: 20px 0 0 10px;
+}
+
+.label {
+    font-size: 27px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.countInput {
+    position: absolute;
+    right: 20px;
+    top: 82px;
+    width: 100px;
+    height: 40px;
     border: 1px solid #F0F0F0;
-    border-radius: 7px;
+    border-radius: 10px;
+    color: #F0F0F0;
+    background-color: #222121;
+    font-size: 20px;
+}
+
+.totalPrice {
+    padding: 20px 0 0 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.totalPriceSpan {
+    position: absolute;
+    right: 20px;
+    top: 144px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.addButton {
+    position: absolute;
+    top: 310px;
+    right: 20px;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    color: #F0F0F0;
+    background-color: #222121;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
     cursor: pointer;
 }

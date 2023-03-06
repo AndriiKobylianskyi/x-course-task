@@ -1,11 +1,22 @@
+import { useEffect } from 'react'
+import { useHref, useNavigate } from 'react-router-dom'
+
 import book from '../../assets/books/websocket.jpg'
 
 import styles from './Specific-book.module.css'
 
 const SpecificBook = () => {
-    return (
+    let url = useHref()
+    let navigate = useNavigate()
 
-        <div className="content">
+    useEffect(() => {
+        if (!localStorage.getItem('username') && url == ('/book')) {
+            navigate('/')
+        }
+    })
+
+    return (
+        <div div className="content" >
             <div className={styles.pbt5 + ` flex-container`}>
                 <div>
                     <img src={book} alt="book" className={styles.book__image} />

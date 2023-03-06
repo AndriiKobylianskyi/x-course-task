@@ -9,7 +9,7 @@ const Header = () => {
     let url = useHref()
 
 
-    if (url !== '/') {
+    if (url !== '/' && url !== '/x-course-task') {
         elements = (
             <div className="flex-container w700">
                 <Link to='/cart'><img src={cart} alt="cart" width="30" height="30" /></Link>

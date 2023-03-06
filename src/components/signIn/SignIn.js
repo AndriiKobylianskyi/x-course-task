@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink, useHref, redirect } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import signImg from '../../assets/images/signImg.png'
 import avatarBig from '../../assets/images/avatarBig.png'

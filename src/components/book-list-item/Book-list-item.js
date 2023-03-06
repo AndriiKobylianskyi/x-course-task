@@ -1,4 +1,5 @@
-import { useHref } from 'react-router-dom'
+import { useState } from 'react'
+import { useHref, NavLink } from 'react-router-dom'
 
 import notFoundImage from '../../assets/images/imageNotFound.png'
 
@@ -7,8 +8,19 @@ import styles from './Book-list-item.module.css'
 
 import data from '../../services/books.json'
 
+
 const BooksListItem = (props) => {
     let url = useHref()
+    let [count, setCount] = useState('')
+
+    if (+count > 42) {
+        setCount(42)
+    } else if (count.value === '') {
+        setCount('')
+    }
+    else if (+count <= 0) {
+        count = 1
+    }
 
     let { author, price, image, title, shortDescription } = data.books[url.slice(10) - 1]
     if (!image) {
@@ -34,12 +46,21 @@ const BooksListItem = (props) => {
                 <div className={styles.blockForPrice}>
                     <div className={styles.book__price}>Price <span className={styles.book__priceSpan}>{price}$ </span></div>
                     <div className={styles.conteinerForPrice}>
-                        <label for="counterForPrice" className={styles.label}>Count</label>
-                        <input type="number" className={styles.countInput} id="counterForPrice" placeholder='0' />
+                        <label htmlFor="counterForPrice" className={styles.label}>Count</label>
+                        <input
+                            type="number"
+                            className={styles.countInput}
+                            id="counterForPrice"
+                            placeholder='0'
+                            onChange={(e) => setCount(e.target.value)} value={count} />
                     </div>
-                    <div className={styles.totalPrice}>Total price <span className={styles.totalPriceSpan}>51</span></div>
+                    <div className={styles.totalPrice}>Total price <span className={styles.totalPriceSpan}>{(price * count).toFixed(2)}$</span></div>
                     <button className={styles.addButton}>Add to cart</button>
                 </div>
+
+                <NavLink to='/booklist'>
+                    <button className={styles.addButton} style={{ top: '490px' }}>Go to all</button>
+                </NavLink>
             </div>
         </div >
 

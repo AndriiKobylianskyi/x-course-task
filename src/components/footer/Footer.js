@@ -1,8 +1,8 @@
-
+import { NavLink } from "react-router-dom"
 
 const Footer = () => {
     return (
-        <>Виконано в <a a href="https://prometheus.org.ua" > Prometheus</a > © 2022</>
+        <>Виконано в <NavLink to="https://prometheus.org.ua" > Prometheus</NavLink > © 2022</>
 
     )
 }

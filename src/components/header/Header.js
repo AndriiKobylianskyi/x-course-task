@@ -28,7 +28,7 @@ const Header = () => {
 
         <div className="content flex-container">
 
-            <div className=""><Link to="/" className={styles.logo}>bookbuy</Link></div>
+            <div className=""><Link to="/x-course-task" className={styles.logo}>bookbuy</Link></div>
             {elements}
         </div>
 

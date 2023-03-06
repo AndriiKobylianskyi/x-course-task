@@ -6,10 +6,11 @@ import styles from './Header.module.css';
 
 const Header = () => {
     let elements = null
-    let url = useHref()
+    let url = window.location.href
+    let urlDEV = useHref()
 
 
-    if ((url !== '/' && url !== '/x-course-task/') || (url !== '/' && url !== '/x-course-task')) {
+    if ((url !== 'https://kobasapchik228.github.io/x-course-task/' && url !== 'https://kobasapchik228.github.io/')) {
         elements = (
             <div className="flex-container w700">
                 <Link to='/cart'><img src={cart} alt="cart" width="30" height="30" /></Link>

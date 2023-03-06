@@ -21,7 +21,7 @@ function App() {
             <main className="main">
                 <Routes>
                     <Route path='/' element={<SignIn />} />
-                    <Route path='/x-course-task' element={<SignIn />} />
+                    <Route path='/x-course-task/' element={<SignIn />} />
                     <Route path='/booklist' element={<BookList />} />
                     <Route path='/cart' element={<Cart />} />
                     <Route path='/booklist/:bookId' element={<BooksListItem />} />

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/x-course-task/static/css/main.ba940c3d.css",
-    "main.js": "/x-course-task/static/js/main.8965fb41.js",
+    "main.js": "/x-course-task/static/js/main.c643361f.js",
     "static/media/signImg.png": "/x-course-task/static/media/signImg.7e07d734827e87eb9a13.png",
     "static/media/myPhoto.jpg": "/x-course-task/static/media/myPhoto.88ce4cd8041c7fd44d7f.jpg",
     "static/media/avatarBig.png": "/x-course-task/static/media/avatarBig.b5145224f823b62caa3e.png",
@@ -10,10 +10,10 @@
     "static/media/cart.svg": "/x-course-task/static/media/cart.5a1c3c755c07e59db7d65be6bc8d8bfb.svg",
     "index.html": "/x-course-task/index.html",
     "main.ba940c3d.css.map": "/x-course-task/static/css/main.ba940c3d.css.map",
-    "main.8965fb41.js.map": "/x-course-task/static/js/main.8965fb41.js.map"
+    "main.c643361f.js.map": "/x-course-task/static/js/main.c643361f.js.map"
   },
   "entrypoints": [
     "static/css/main.ba940c3d.css",
-    "static/js/main.8965fb41.js"
+    "static/js/main.c643361f.js"
   ]
 }

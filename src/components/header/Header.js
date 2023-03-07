@@ -37,12 +37,12 @@ const Header = () => {
     // } else {
     //     elements = null
     // }
-
+    let logo = localStorage.getItem('username') ? <Link to="/booklist" className={styles.logo}>bookbuy</Link> : <Link to="/" className={styles.logo}>bookbuy</Link>
 
     return (
 
         <div className="content flex-container">
-            <div className=""><Link to="/" className={styles.logo}>bookbuy</Link></div>
+            <div>{logo}</div>
             {elements}
         </div>
 

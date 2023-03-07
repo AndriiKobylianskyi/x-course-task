@@ -89,8 +89,8 @@ const BookList = () => {
 
             }
 
-            if (title.length > 24) {
-                title = `${title.slice(0, 24)} ...`
+            if (title.length > 20) {
+                title = `${title.slice(0, 20)} ...`
 
             }
 

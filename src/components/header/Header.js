@@ -10,7 +10,7 @@ const Header = () => {
     let urlDEV = useHref()
 
 
-    if ((url !== 'https://kobasapchik228.github.io/x-course-task/' && url !== 'https://kobasapchik228.github.io/')) {
+    if ((url !== 'https://andriikobylianskyi.github.io/x-course-task/' && url !== 'https://andriikobylianskyi.github.io/')) {
         elements = (
             <div className="flex-container w700">
                 <Link to='/cart'><img src={cart} alt="cart" width="30" height="30" /></Link>
